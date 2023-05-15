@@ -12,7 +12,7 @@
         <input type="text" class="casilla-de-texto">
         <div class="botones-texto">
             <input type="submit" value="Encriptar" onclick="encriptar()">
-            <input type="submit" value="Desencriptar" id="boton-desencriptar">
+            <input type="submit" value="Desencriptar" onclick="desencriptar()" id="boton-desencriptar">
         </div>
         <div class="mensaje">
             <p>Mensaje Obtenido</p>
@@ -25,6 +25,12 @@
                     document.querySelector(".mensaje-mostrado").value= textoCifrado;
                     document.querySelector("#boton-encriptar").value;
                 }
+            function desencriptar(){
+                var texto = document.querySelector(".casilla-de-texto").value;
+                var textoCifrado = texto.replace(/ai/gi, "a").replace(/enter/gi, "e").replace(/imes/gi, "i").replace(/ober/gi, "o").replace(/ufat/gi, "u");
+                document.querySelector(".mensaje-mostrado").value= textoCifrado;
+                document.querySelector("#boton-desencriptar");
+            }
         </script>
     </body>
     <footer>
