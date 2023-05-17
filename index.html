@@ -9,11 +9,18 @@
         <title>Encriptador</title>
     </head>
     <body>
-        <textarea cols="30" rows="10" class="casilla-de-texto"></textarea> 
-        <div class="botones-texto">
-            <input type="submit" value="Encriptar" onclick="encriptar()" id="boton-encriptar">
-            <input type="submit" value="Desencriptar" onclick="desencriptar()" id="boton-desencriptar">
-        </div>
+        <section class="background-y-texto">
+            <div class="caja-de-texto">
+                <img src="imagenes/fondo.jpg" class="imagen">
+                <textarea class="casilla-de-texto"></textarea>
+            </div>
+        </section>
+        <section>
+            <div class="botones-de-funcion">
+                <input type="submit" value="Encriptar" onclick="encriptar()" id="boton-encriptar">
+                <input type="submit" value="Desencriptar" onclick="desencriptar()" id="boton-desencriptar">
+            </div>
+        </section>
         <div class="mensaje">
             <p>Mensaje Obtenido</p>
             <input type="text" class="mensaje-mostrado">
@@ -33,7 +40,7 @@
                 document.querySelector("#boton-desencriptar").value;
             }
 
-            function copiar() {
+            function copiar(){
                 var mensajeMostrado = document.querySelector(".mensaje-mostrado").value;
                 navigator.clipboard.writeText(mensajeMostrado);
             }

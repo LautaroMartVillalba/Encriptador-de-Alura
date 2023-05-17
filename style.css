@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(83, 80, 80);
+}
+.imagen{
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+}
+textarea{
+    background-color: rgb(158, 158, 158);
+}
+.background-y-texto{
+    display: flex;
+    Justify-content: center;
+    align-items: center;
+}
+.caja-de-texto{
+    position: absolute;
+    top: 50px;
+}
+.casilla-de-texto{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    height: 85%; /*Esto lo centra en la mitad de la pantalla*/
+    outline: none; /*Esto le saca el borde negro exterior*/
+    resize: none;
+    resize: none; /*Impide que el textarea permita modificar su tamaño*/
+    border-radius: 3px;
+}
+.botones-de-funcion{
+    margin: 0 auto;
+    display: block;
+}
