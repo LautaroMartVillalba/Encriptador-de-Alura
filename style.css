@@ -1,30 +1,45 @@
-body{
+body {
     background-color: rgb(83, 80, 80);
 }
-.background-texto-botones{
+
+.background-texto-botones {
     display: flex;
     Justify-content: center;
     align-items: center;
     padding-top: 3rem;
 }
-.imagen{
+
+.imagen {
     background-image: url(imagenes/fondo.jpg);
-    width: 38rem;
-    height: 26rem;
-    top: 10rem;
+    background-size: cover;
+    /* propiedad para hacer que la imagen ocupe todo el contedor, en caso contrario por más ancho o largo que le demos a este contenedor la imagen no va a crecer más que su tamaño base */
+    width: 50rem;
+    height: 30rem;
+    /* a partir de ahora podemos definir el width y el height que queramos y la imagen nos va a acompañar */
     border-radius: 5px;
     background-repeat: no-repeat;
-}
-.casilla-de-texto{
-    background-color: rgb(158, 158, 158);
-    position: relative;
-    width: 80%;
-    height: 75%;
-    left: 50%;
-    top: 45%;
-    transform: translate(-50%, -50%);
-    outline: none; /*Esto le saca el borde negro exterior*/
-    resize: none; /*Impide que el textarea permita modificar su tamaño*/
-    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
+.casilla-de-texto {
+    /* borrados el position, el left y el top */
+    background-color: rgb(158, 158, 158);
+    /* eliminación del transform, que movía el textarea un 50% arriba y a la izquierda */
+    outline: none;
+    /*Esto le saca el borde negro exterior*/
+    resize: none;
+    /*Impide que el textarea permita modificar su tamaño*/
+    border-radius: 3px;
+    width: 90%;
+    height: 90%;
+
+}
+
+
+/* nueva clase para el div de los botones */
+.botones {
+    display: flex;
+}
