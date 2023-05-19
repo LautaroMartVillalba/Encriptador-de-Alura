@@ -1,14 +1,14 @@
-body {
-    background-color: rgb(83, 80, 80);
+@import{font-family: 'Roboto', sans-serif;
 }
-
+body {
+    background-color: rgb(46, 45, 45);
+}
 .background-texto-botones {
     display: flex;
     Justify-content: center;
     align-items: center;
     padding-top: 3rem;
 }
-
 .imagen {
     background-image: url(imagenes/fondo.jpg);
     background-size: cover;
@@ -22,24 +22,41 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-shadow: 10px 4px 10px 4px #000000;
 }
-
 .casilla-de-texto {
     /* borrados el position, el left y el top */
-    background-color: rgb(158, 158, 158);
+    background-color: rgba(212, 212, 212, 0.808);
     /* eliminación del transform, que movía el textarea un 50% arriba y a la izquierda */
-    outline: none;
-    /*Esto le saca el borde negro exterior*/
-    resize: none;
-    /*Impide que el textarea permita modificar su tamaño*/
+    outline: none; /*Esto le saca el borde negro exterior*/
+    resize: none; /*Impide que el textarea permita modificar su tamaño*/
     border-radius: 3px;
     width: 90%;
-    height: 90%;
-
+    height: 70%;
 }
-
-
-/* nueva clase para el div de los botones */
 .botones {
     display: flex;
+    padding: 0.7rem;
+    margin: 1rem 6rem 0 6rem;
+    outline: none;
+}
+#boton-encriptar, #boton-desencriptar{
+    background-color: #424242;
+    box-shadow: 3px 1px 3px 1px #000000;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    text-align: center;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+    padding: 0.5rem 2.5rem;
+    font: normal 13px/100% Raleway, Verdana, Arial;
+    border-radius: 6px;
+}
+.mensaje{
+    background-color: white;
+    font: normal 13px/100% Raleway, Verdana, Arial;
+    cursor: text;
+    display: flex;
+    Justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
 }

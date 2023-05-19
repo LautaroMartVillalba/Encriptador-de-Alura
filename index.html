@@ -6,24 +6,24 @@
     <meta name="viewport" content="widht=device-widht">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
     <title>Encriptador</title>
 </head>
 
 <body>
     <section class="background-texto-botones">
         <div class="imagen">
-            <textarea class="casilla-de-texto"></textarea>
-            <!-- creación de contendedor para los botones -->
+            <textarea class="casilla-de-texto" placeholder="Utilizar sólo letras minúsculas y sin caracteres especiales"></textarea>
             <div class="botones">
                 <input type="submit" value="Encriptar" onclick="encriptar()" class="botones" id="boton-encriptar">
-                <input type="submit" value="Desencriptar" onclick="desencriptar()" class="botones"
-                    id="boton-desencriptar">
+                <input type="submit" value="Desencriptar" onclick="desencriptar()" class="botones" id="boton-desencriptar">
             </div>
         </div>
     </section>
     <div class="mensaje">
-        <p>Mensaje Obtenido</p>
-        <input type="text" class="mensaje-mostrado">
+        <input type="text" class="mensaje-mostrado" disabled>
         <button onclick="copiar()">Copiar</button>
     </div>
     <script>
