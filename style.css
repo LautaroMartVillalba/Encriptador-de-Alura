@@ -15,7 +15,7 @@ body {
     background-size: cover;
     /* propiedad para hacer que la imagen ocupe todo el contedor, en caso contrario por más ancho o largo que le demos a este contenedor la imagen no va a crecer más que su tamaño base */
     width: 50rem;
-    height: 30rem;
+    height: 20rem;
     /* a partir de ahora podemos definir el width y el height que queramos y la imagen nos va a acompañar */
     border-radius: 5px;
     background-repeat: no-repeat;
@@ -40,7 +40,7 @@ body {
 .botones {
     display: flex;
     padding: 0.7rem;
-    margin: 1rem 6rem 0 6rem;
+    margin: 0.1rem 6rem 0 6rem;
     outline: none;
 }
 #boton-encriptar, #boton-desencriptar{
@@ -78,7 +78,7 @@ body {
     background-image: url(imagenes/fondo-de-mensaje.jpg);
     background-size: cover;
     width: 45.4rem;
-    height: 10.4rem;
+    height: 7.4rem;
     border-radius: 5px;
     background-repeat: no-repeat;
     display: flex;
@@ -96,9 +96,9 @@ body {
     resize: none;
     border-radius: 6px;
     width: 45rem;
-    height: 10rem;
+    height: 7rem;
     font-weight: bold;
-    margin-top: 3.2rem;
+    margin-top: 3.5rem;
     padding: 1rem;
 }
 .copiar{
@@ -120,6 +120,7 @@ body {
     font: normal 13px/100% Raleway, Verdana, Arial;
     border-radius: 6px;
     transition: 1000ms;
+    margin-top: 0.4rem;
 }
 .boton-copiar:hover{
     background-color: #42424296;
@@ -140,4 +141,5 @@ footer{
     justify-content: center;
     font-size: 14px;
     padding: 3rem;
+    opacity: 0.3;
 }
