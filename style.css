@@ -1,5 +1,4 @@
-@import{font-family: 'Roboto', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
     background-color: rgb(46, 45, 45);
@@ -11,48 +10,46 @@ body {
     padding-top: 3rem;
 }
 .imagen {
-    background-image: url(imagenes/fondo-texto-a-encriptar.jpg);
-    background-size: cover;
-    /* propiedad para hacer que la imagen ocupe todo el contedor, en caso contrario por más ancho o largo que le demos a este contenedor la imagen no va a crecer más que su tamaño base */
-    width: 50rem;
-    height: 20rem;
-    /* a partir de ahora podemos definir el width y el height que queramos y la imagen nos va a acompañar */
-    border-radius: 5px;
-    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-image: url(imagenes/fondo-texto-a-encriptar.jpg);
+    background-size: cover;/* propiedad para hacer que la imagen ocupe todo el contedor, en caso contrario por más ancho o largo que le demos a este contenedor la imagen no va a crecer más que su tamaño base */
+    background-repeat: no-repeat;
+    width: 50rem;
+    height: 20rem;
+    /* a partir de ahora podemos definir el width y el height que queramos y la imagen nos va a acompañar */
+    border-radius: 5px;
     box-shadow: 10px 4px 10px 4px #000000;
 }
 .casilla-de-texto {
-    /* borrados el position, el left y el top */
+    margin-top: 0.8rem;
+    padding: 1rem;
     background-color: rgba(212, 212, 212, 0.808);
-    /* eliminación del transform, que movía el textarea un 50% arriba y a la izquierda */
     outline: none; /*Esto le saca el borde negro exterior*/
     resize: none; /*Impide que el textarea permita modificar su tamaño*/
     border-radius: 3px;
     width: 90%;
     height: 70%;
-    margin-top: 0.8rem;
-    padding: 1rem;
 }
 .botones {
-    display: flex;
     padding: 0.7rem;
     margin: 0.1rem 6rem 0 6rem;
     outline: none;
+    display: flex;
 }
 #boton-encriptar, #boton-desencriptar{
+    text-align: center;
+    padding: 0.5rem 2.5rem;
     background-color: #424242;
     box-shadow: 3px 1px 3px 1px #000000;
     color: rgb(0, 0, 0);
     cursor: pointer;
-    text-align: center;
     text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-    padding: 0.5rem 2.5rem;
     font: normal 13px/100% Raleway, Verdana, Arial;
     border-radius: 6px;
+    border: none;
     transition: 1000ms;
 }
 #boton-encriptar:hover{
@@ -75,31 +72,31 @@ body {
     margin-bottom: 3rem;
 }
 .fondo-de-mensaje{
-    background-image: url(imagenes/fondo-de-mensaje.jpg);
-    background-size: cover;
-    width: 45.4rem;
-    height: 7.4rem;
-    border-radius: 5px;
-    background-repeat: no-repeat;
+    margin-bottom: 2rem;
+    padding: 0.8rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-image: url(imagenes/fondo-de-mensaje.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 45.4rem;
+    height: 7.4rem;
+    border-radius: 5px;
     box-shadow: 10px 4px 10px 4px #000000;
-    margin-bottom: 2rem;
-    padding: 0.8rem;
 }
 .mensaje-mostrado{
-    background-color: rgba(255, 255, 255, 0.575);
-    color: black;
-    outline: none;
-    resize: none;
-    border-radius: 6px;
-    width: 45rem;
-    height: 7rem;
-    font-weight: bold;
     margin-top: 3.5rem;
     padding: 1rem;
+    outline: none;
+    resize: none;
+    width: 45rem;
+    height: 7rem;
+    background-color: rgba(255, 255, 255, 0.575);
+    color: black;
+    border-radius: 6px;
+    font-weight: bold;
 }
 .copiar{
     outline: none;
@@ -110,6 +107,7 @@ body {
     margin-top: 1rem;
 }
 .boton-copiar{
+    margin-top: 0.4rem;
     background-color: #424242;
     box-shadow: 3px 1px 3px 1px #000000;
     color: rgb(0, 0, 0);
@@ -117,10 +115,10 @@ body {
     text-align: center;
     text-shadow: 0 1px rgba(0, 0, 0, 0.3);
     padding: 0.5rem 2.5rem;
-    font: normal 13px/100% Raleway, Verdana, Arial;
     border-radius: 6px;
+    border: none;
     transition: 1000ms;
-    margin-top: 0.4rem;
+    font: normal 13px/100% Raleway, Verdana, Arial;
 }
 .boton-copiar:hover{
     background-color: #42424296;
@@ -133,13 +131,13 @@ footer{
     padding: 40px;
 }
 .copyright{
-    color: white;
+    padding: 3rem;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: white;
     font-size: 14px;
-    padding: 3rem;
     opacity: 0.3;
 }
